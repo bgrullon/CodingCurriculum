@@ -211,6 +211,17 @@ a:hover {
   width: 880px;
 }
 
+#very-hard {
+  margin: 10px 0 0 200px;
+  width: 440px;
+}
+
+#very-hard2 {
+  margin: 10px 0 0 10px;
+  width: 400px;
+}
+
+
 .side-bar {
   position: fixed;
   left: 0;
