@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Exercise 6</title>
+  <meta name="description" content="ITA CSS Layout Exercise">
+  <meta name="author" content="Mark Kroh">
+
+  <style>
+  .interior{
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+  }
+  .div1 {
+    background-color: violet;
+    transform: rotate(15deg) translateY(40px) translateX(5px);
+    z-index: 4;
+  }
+  .div4{
+    background-color: blue;
+    transform: rotate(30deg) translateY(-65px) translateX(-10px);
+    z-index: 3;
+  }
+  .div5{
+    background-color: yellow;
+    transform: rotate(45deg) translateY(-15px) translateX(-10px);
+    z-index: 2;
+  }
+  .div3{
+    background-color: orange;
+    transform: rotate(-15deg) translateY(-5px) translateX(-10px);
+    z-index: 1;
+  }
+  .div2{
+    background-color: red;
+    transform: translateX(-55px);
+  }
+  .container{
+    width: 360px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  </style>
+</head>
+<body>
+	<!-- Do not touch the HTML please -->
+	<div class="container">
+		<div class="interior div1"></div>
+		<div class="interior div2"></div>
+		<div class="interior div3"></div>
+		<div class="interior div4"></div>
+		<div class="interior div5"></div>
+	</div>
+</body>
+</html>
