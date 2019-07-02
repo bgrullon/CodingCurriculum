@@ -1,0 +1,279 @@
+/*
+NOTES
+
+Display : (block, inline, inline-block, none)
+
+display: none; removes element
+visibility: hidden; removes element but keeps block
+
+Position : (static, relative, absolute, fixed)
+
+
+*/
+body {
+  color: #010101;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+li {
+  display: inline-block;
+  padding: 5px 16px;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 0;
+  position: relative;
+  top: 100px;
+  font-family: 'Calligraffitti', cursive;
+  color: #cef9e2;
+  text-shadow: -3px 3px black;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  color: #acdbdf;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  color: #69779b;
+}
+
+hr {
+  border: dotted black 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto 100px auto;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  color: #71a0a5;
+  font-family: 'Merriweather', serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+/* classes */
+
+.under-title {
+  font-size: 2rem;
+  position: relative;
+  top: 24px;
+  font-family: 'Cinzel', serif;
+  color: #cef9e2;
+  font-weight: normal;
+  text-shadow: -2px 2px black;
+}
+
+.top-con {
+  background-color: #cef9e2;
+  background: url('../images/headerBackImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px #acdbdf;
+  border-style: solid;
+}
+
+.nav-bar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.intro {
+  margin: auto;
+  width: 30%;
+}
+
+.middle-container {
+  margin: 50px 0;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.skill-image-one {
+  width: 25%;
+  height: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.skill-image-two {
+  width: 25%;
+  height: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+
+.contact-me {
+  width: 37%;
+  margin: 40px auto 60px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.bottom-container {
+  background-color: #cef9e2;
+  padding: 50px 0 20px;
+}
+
+.copyright {
+  color: #010101;
+  padding: 20px 0;
+}
+
+/* WEEK ONE ASSIGNMENTS in weekOne.html */
+
+
+.toy-problems {
+  background-image: linear-gradient(black, #681313, #9c2c2c);
+  box-shadow: -10px 10px 15px black;
+  padding: 10px 15px;
+  color: white;
+  text-align: left;
+  float: left;
+}
+.toy-problems li {
+  list-style-position: outside;
+  display: list-item;
+}
+
+.red {color: red;}
+.orange {color: orange;}
+.yellow {color: yellow;}
+.green {color: green;}
+.blue {color: blue;}
+.indigo {color: indigo;}
+.violet {color: violet;}
+
+#very-easy{
+  width: 200px;
+  margin: 30px 0 0 200px;
+}
+
+#easy{
+  width: 300px;
+  margin: 30px 0 0 10px;
+  height: 370px;
+}
+
+#medium {
+  width: 300px;
+  margin: 30px 0 0 10px;
+  height: 370px;
+}
+
+#hard{
+  margin: 10px 0 0 200px;
+  width: 880px;
+}
+
+#very-hard {
+  margin: 10px 0 0 200px;
+  width: 440px;
+}
+
+#very-hard2 {
+  margin: 10px 0 0 10px;
+  width: 400px;
+}
+
+
+.side-bar {
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  padding-left: 0;
+  background-color: white;
+  border: 5px #acdbdf;
+  border-style: solid;
+}
+
+.side-bar a {
+  display: block;
+}
+
+.navDropDown {
+  display: none;
+  float: left;
+}
+
+.navDropDown a {
+  display: inline-block;
+  position: absolute;
+}
+
+.navList:hover .navDropDown {
+  display: block;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px){
+
+  .intro{
+    width: 60%;
+    font-size: 1.5em;
+  }
+  .skill-row {
+    width: 60%;
+    font-size: 1.5em;
+  }
+  .footer-link {
+    font-size: 2em;
+  }
+  .contact-me {
+    font-size: 1.5em;
+  }
+  .nav-bar {
+    font-size: 1.6em;
+    float: none;
+  }
+}

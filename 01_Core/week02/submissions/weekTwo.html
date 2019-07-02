@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ITA Week One</title>
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Cinzel|Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+  </head>
+  <body>
+    <!-- Top Container-->
+    <div id="pageTop" class= "top-con">
+      <h1>Week Two</h1>
+      <p class="under-title">Assignments</p>
+    </div>
+    <div>
+      <!-- Toy Problem One -->
+      <div id="very-easy" class="toy-problems">
+        <p>Very Easy</p>
+        <p><i>Create a bulleted list of the colors of the rainbow</i></p>
+        <ul>
+          <li class="red">RED</li>
+          <li class="orange">ORANGE</li>
+          <li class="yellow">YELLOW</li>
+          <li class="green">GREEN</li>
+          <li class="blue">BLUE</li>
+          <li class="indigo">INDIGO</li>
+          <li class="violet">VIOLET</li>
+        </ul>
+      </div>
+      <!-- Toy Problem Two -->
+      <div id="easy" class="toy-problems">
+        <p>Easy</p>
+        <p><i>Create an HTML page with a main headline, two subheads in their own sections and supporting text for each subhead.</i></p>
+        <p>This<a href="index.html">link</a>will take you to where I completed this toy problem.</p>
+      </div>
+      <!-- Toy Problem Three -->
+      <div id="medium" class="toy-problems">
+        <p>Medium</p>
+        <p><i>Using semantic HTML, add a footer with a copyright year and social media links (minimum of 3). Add a sidebar with links to outside content.</i></p>
+        <p>This<a href="index.html#contactMe">link</a>will take you to directly to the footer.</p>
+        <p>The sidebar is to the left and 4 of the links take you to outside content.</p>
+      </div>
+    </div>
+    <!-- Toy Problem Four -->
+    <div id="hard" class="toy-problems">
+      <form>
+            <p>Hard</p>
+            <h2>Contact Information</h2>
+
+            <label for="firstName">First Name:</label>
+            <input id="firstName" type="text" name="firstName" placeholder="" class="">
+
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" type="text" name="lastName" placeholder="" class="">
+
+            <input id="male" type="radio" name="gender" value="male"> Male </>
+            <input id="female" type="radio" name="gender" value="female"> Female </>
+
+            <p>Favorite Esport:
+            <select id="esport">
+              <option value="blank"></option>
+              <option value="League of legends">League of Legends</option>
+              <option value="Fortnite">Fortnite</option>
+              <option value="Call of Duty">Call of Duty</option>
+              <option value="Street Fighter V">Street Fighter V</option>
+              <option value="Overwatch">Overwatch</option>
+            </select></p>
+
+            <p> Favorite Pizza Toppings:
+              <input id="1" type="checkbox" name="pizza" value="Cheese">Cheese</>
+              <input id="2" type="checkbox" name="pizza" value="Pineapple">Pineapple</>
+              <input id="3" type="checkbox" name="pizza" value="Onions">Onion</>
+              <input id="4" type="checkbox" name="pizza" value="Chicken">Chicken</>
+              <input id="5" type="checkbox" name="pizza" value="Ham">Ham</>
+            </p>
+
+            <input type="submit" value="Save" id="Save" onclick="return getInput()">
+        </form>
+    </div>
+
+    <!-- Toy Problem Five -->
+    <div id="very-hard" class="toy-problems">
+      <form>
+              <p>Very Hard</p>
+              <h4>Input list of names:</h4>
+              <textarea rows="5" cols="60" id="nameList"></textarea>
+      </form>
+      <button onclick="getNameList()">Submit</button>
+    </div>
+
+    <div id="very-hard2" class="toy-problems">
+      <ol id="displayNames">
+
+      </ol>
+    </div>
+
+      <!-- Toy Problem Three -->
+      <div class="side-bar">
+        <a href="index.html">Main Page</a>
+        <a href="https://www.redventures.com">Red Ventures</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+        <a href="https://twitter.com/">Twitter</a>
+        <a href="https://www.instagram.com">Instagram</a>
+        <a href="index.html#contactMe">Contact Info</a>
+      </div>
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
