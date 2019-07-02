@@ -9,7 +9,37 @@
   <meta name="author" content="Mark Kroh">
 
   <style>
-  	
+  .interior{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+
+  .div5 {
+    background-color: red;
+    position: absolute;
+    align-self: center;
+    transform: rotate(45deg);
+  }
+
+  .div5::after{
+    content: url("star.png");
+    display: block;
+    position: relative;
+    text-align: center;
+    transform: rotate(25deg);
+    top: 28%;
+  }
+
+  .container {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   </style>
 </head>
 <body>
