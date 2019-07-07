@@ -11,6 +11,12 @@
     <script src="https://kit.fontawesome.com/164c842cae.js"></script>
   </head>
   <body>
+    <div id="dimmer"></div>
+    <div class="status-page">
+      <div id="feature-1" class="card bg-img grid-item_1"></div>
+      <p class="card-description">blah blah blah blah blah blah</p>
+      <button type="button" name="undim" onclick="undim()"><i class="fas fa-times fa-2x"></i></button>
+    </div>
     <div class="wrap">
       <header class="main-header">
           <div class="container">
@@ -26,21 +32,49 @@
       </header>
       <div class="container">
         <div class="grid-container">
-          <div id="feature-1" class="card bg-img grid-item_1"></div>
-          <div id="feature-2" class="card bg-img grid-item_2"></div>
-          <div id="feature-3" class="card bg-img grid-item_3"></div>
-          <div id="feature-4" class="card bg-img grid-item_4"></div>
-          <div id="feature-5" class="card bg-img grid-item_5"></div>
-          <div id="feature-6" class="card bg-img grid-item_6"></div>
-          <div id="feature-7" class="card bg-img grid-item_7"></div>
-          <div id="feature-8" class="card bg-img grid-item_8"></div>
-          <div id="feature-9" class="card bg-img grid-item_9"></div>
-          <div id="feature-10" class="card bg-img grid-item_10"></div>
-          <div id="feature-11" class="card bg-img grid-item_11"></div>
-          <div id="feature-12" class="card bg-img grid-item_12"></div>
+          <div id="feature-1" class="card bg-img grid-item_1" onclick="dim()"></div>
+          <div id="feature-2" class="card bg-img grid-item_2" onclick="dim()"></div>
+          <div id="feature-3" class="card bg-img grid-item_3" onclick="dim()"></div>
+          <div id="feature-4" class="card bg-img grid-item_4" onclick="dim()"></div>
+          <div id="feature-5" class="card bg-img grid-item_5" onclick="dim()"></div>
+          <div id="feature-6" class="card bg-img grid-item_6" onclick="dim()"></div>
+          <div id="feature-7" class="card bg-img grid-item_7" onclick="dim()"></div>
+          <div id="feature-8" class="card bg-img grid-item_8" onclick="dim()"></div>
+          <div id="feature-9" class="card bg-img grid-item_9" onclick="dim()"></div>
+          <div id="feature-10" class="card bg-img grid-item_10" onclick="dim()"></div>
+          <div id="feature-11" class="card bg-img grid-item_11" onclick="dim()"></div>
+          <div id="feature-12" class="card bg-img grid-item_12" onclick="dim()"></div>
         </div>
       </div>
-
+      <div class="filter-wrap">
+        <div class="filters">
+          <form action="#">
+          <h4>Type:</h4>
+            <input type="checkbox" name="Type" value="forward"> Forward <br>
+            <input type="checkbox" name="Type" value="backup"> Backup <br>
+            <input type="checkbox" name="Type" value="summon"> Summon <br>
+            <input type="checkbox" name="Type" value="monster"> Monster <br>
+          <h4>Element:</h4>
+            <input type="checkbox" name="Element" value="fire"> Fire <br>
+            <input type="checkbox" name="Element" value="water"> Water <br>
+            <input type="checkbox" name="Element" value="ice"> Ice <br>
+            <input type="checkbox" name="Element" value="earth"> Earth <br>
+            <input type="checkbox" name="Element" value="lightning"> Lightning <br>
+            <input type="checkbox" name="Element" value="wind"> Wind <br>
+            <input type="checkbox" name="Element" value="light"> Light <br>
+            <input type="checkbox" name="Element" value="dark"> Dark <br>
+          <h4>Rarity:</h4>
+            <input type="checkbox" name="Rarity" value="common"> Common <br>
+            <input type="checkbox" name="Rarity" value="rare"> Rare <br>
+            <input type="checkbox" name="Rarity" value="hero"> Hero <br>
+            <input type="checkbox" name="Rarity" value="legend"> Legend <br>
+            <input type="checkbox" name="Rarity" value="starter"> Starter <br>
+            <input type="checkbox" name="Rarity" value="promo"> Promo <br>
+            <input class="apply"type="submit" value="Apply Filters">
+          </form>
+        </div>
+        <button class="filter-toggle" type="button" name="toggle" onclick="filterBtn()"><i class="fas fa-caret-square-right fa-2x"></i></button>
+      </div>
     </div>
     <footer class="main-footer">
       <div class="container">
@@ -51,6 +85,6 @@
         <a href="#pageTop">Back to top</a>
       </div>
     </footer>
-
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
