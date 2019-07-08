@@ -62,7 +62,7 @@ Button to toggle filter open and close
     //check for empty space since that seems to be windows default value
   if (x.style.display == "" || x.style.display === "none" ) {
     x.style.display = "Block";
-    y.style.width = "180px";
+    y.style.width = "200px";
   } else {
     x.style.display = "none";
     y.style.width = "1px";
@@ -72,7 +72,7 @@ Button to toggle filter open and close
 ////////////////////////////////////////////////////////////////
 /*
 
-Button to toggle filter open and close
+Turn DIM on and show product detail page
 
 */
 ////////////////////////////////////////////////////////////////
@@ -89,7 +89,7 @@ dim = () => {
 ////////////////////////////////////////////////////////////////
 /*
 
-Button to toggle filter open and close
+HIDE product detail page and remove DIM
 
 */
 ////////////////////////////////////////////////////////////////
@@ -98,3 +98,62 @@ undim = () => {
   document.getElementById("dimmer").style.display = "none";
   document.querySelector(".status-page").style.display = "none";
 };
+
+////////////////////////////////////////////////////////////////
+/*
+
+Contact form information validation
+
+*/
+////////////////////////////////////////////////////////////////
+
+contactValid = () => {
+  var contactInfo = [],
+  mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  contactInfo[0] = document.getElementById("fName").value;
+  contactInfo[1] = document.getElementById("lName").value;
+  contactInfo[2] = document.getElementById("email").value;
+  contactInfo[3] = document.getElementById("tel").value;
+
+  if (document.getElementById("fName").value === ""){
+    let notValid = document.getElementById("fName");
+    notValid.placeholder = "Please enter Name!";
+    notValid.focus();
+  }else if (document.getElementById("lName").value === ""){
+    let notValid = document.getElementById("lName");
+    notValid.placeholder = "Please enter Name!";
+    notValid.focus();
+  }else if (document.getElementById("email").value === ""){
+    let notValid = document.getElementById("email");
+    notValid.placeholder = "Please enter Email!";
+    notValid.focus();
+  }else if (!document.getElementById("email").value.match(mailformat)){
+    let notValid = document.getElementById("email");
+    notValid.value = "";
+    notValid.placeholder = "Email must be Valid!";
+    notValid.focus();
+  }else if (document.getElementById("tel").value.length > 10 ||
+            document.getElementById("tel").value.length < 10 ){
+    notValid = document.getElementById("tel");
+    notValid.value = "";
+    notValid.placeholder = "Invalid Number!";
+    notValid.focus();
+  }
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////
