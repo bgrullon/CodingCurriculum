@@ -82,7 +82,7 @@ dim = () => {
       y = document.querySelector(".status-page");
   if (x.style.display == "" || x.style.display === "none"){
     x.style.display = "Block";
-    y.style.display = "Block";
+    y.style.display = "flex";
   }
 };
 

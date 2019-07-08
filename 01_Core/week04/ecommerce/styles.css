@@ -103,13 +103,15 @@ body {
   height: 300px;
   background-color: transparent;
   box-shadow: -15px 15px 20px black;
+  border-radius: 8px;
 }
 
 .card {
-  width: 180px;
+  width: 190px;
   height: 260px;
   background-color: transparent;
   box-shadow: -10px 10px 10px black;
+  border-radius: 8px;
 }
 
 .bg-img {
@@ -137,9 +139,7 @@ body {
   background-color: transparent;
   box-shadow: -5px 5px 10px black;
 }
-.popular {
-  margin-bottom: 10px;
-}
+
 
 /***********************
 
@@ -147,7 +147,7 @@ body {
 
          **********************/
 .grid-container {
-  margin: 15px 0 10px 0;
+  margin: 15px 0 30px 0;
   display: grid;
   grid-template-columns: 220px, 220px, 220px, 220px;
   grid-template-rows: 300px, 300px, 300px;
@@ -171,6 +171,7 @@ body {
   grid-column-start: 4;
   grid-row-start: 1;
 }
+
 /***********************
 
       FILTERS
@@ -210,14 +211,54 @@ body {
   z-index: 20;
   left: 40%;
   top: 30%;
-  background-color: white;
-  width: 360px;
-  height: 360px;
+  background-color: #e84a5f;
+  width: 400px;
+  height: 270px;
   text-align: right;
   padding: 15px;
   display: none;
+  justify-content: center;
+  border-radius: 8px;
 }
-
+.status-page-description {
+  width: 180px;
+  height: 200px;
+  padding: 5px;
+  margin: auto 0 auto 5px;
+  background-color: #2a363b;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+.undim,
+.add-to-cart {
+  box-shadow: none;
+  position: absolute;
+  background: transparent;
+}
+.undim {
+  top: 5px;
+  right: 1px;
+}
+.add-to-cart {
+  bottom: 5px;
+  right: 5px;
+}
+.quantity-label,
+.quantity {
+  position: absolute;
+  height: 30px;
+  width: 35px;
+}
+.quantity {
+  right: 15%;
+  bottom: 10px
+}
+.quantity-label {
+  right: 40%;
+  color: #2a363b;
+  bottom: 4px;
+}
 
 /***********************
 
@@ -236,7 +277,27 @@ body {
   display:none;
   z-index:10;
 }
+/***********************
 
+      PAGE INDICATION
+
+         **********************/
+.page-number {
+  display: flex;
+  justify-content: center;
+  bottom: 12%;
+  left: 50%;
+}
+.previous-page,
+.next-page {
+  box-shadow: none;
+}
+.previous-page{
+  color: white;
+}
+.page-number-label {
+  font-size: 1.5em;
+}
 /***********************
 
       FOOTER CONTAINER
@@ -244,7 +305,7 @@ body {
          **********************/
 
 .wrap {
-  min-height: calc(100vh - 128px);
+  min-height: calc(100vh - 118px);
 }
 .main-footer {
   text-align: center;
