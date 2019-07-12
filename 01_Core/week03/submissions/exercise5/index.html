@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>CSS Exercise 4</title>
+  <title>CSS Exercise 5</title>
   <meta name="description" content="ITA CSS Layout Exercise">
   <meta name="author" content="Mark Kroh">
 
@@ -12,38 +12,36 @@
     .interior{
       width: 100px;
       height: 100px;
-      border: 5px white solid;
+      border-style: solid;
+      border-width: 5px;
+      border-color: white;
     }
     .div5 {
       background-color: violet;
-      margin-left: 220px;
-      transform: translateY(-220px);
-      z-index: 4;
     }
     .div4{
       background-color: blue;
-      margin-left: 165px;
-      transform: translateY(-165px);
-      z-index: 3;
     }
     .div3{
       background-color: yellow;
-      margin-left: 110px;
-      transform: translateY(-110px);
-      z-index: 2;
     }
     .div2{
       background-color: orange;
-      margin-left: 55px;
-      transform: translateY(-55px);
-      z-index: 1;
     }
     .div1{
       background-color: red;
     }
-    .container{
-      width: 330px;
-      height: 330px;
+    .div5, .div4 {
+      transform: translateY(-70px);
+      margin: 0 5px;
+    }
+    .container {
+      width: 360px;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
     }
   </style>
 </head>
