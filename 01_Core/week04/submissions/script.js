@@ -132,13 +132,16 @@ contactValid = () => {
     notValid.value = "";
     notValid.placeholder = "Email must be Valid!";
     notValid.focus();
-  }else if (document.getElementById("tel").value.length > 10 ||
-            document.getElementById("tel").value.length < 10 ){
-    notValid = document.getElementById("tel");
-    notValid.value = "";
-    notValid.placeholder = "Invalid Number!";
-    notValid.focus();
-  }
+
+  // }else if (document.getElementById("tel").value.length > 10 ||
+  //           document.getElementById("tel").value.length < 10 ){
+  //   notValid = document.getElementById("tel");
+  //   notValid.value = "";
+  //   notValid.placeholder = "Invalid Number!";
+  //   notValid.focus();
+}else {
+  console.log("Sumbitted")
+}
 
 };
 
