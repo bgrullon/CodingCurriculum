@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CHOCOBO INN</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/164c842cae.js"></script>
+  </head>
+  <body>
+    <div id="dimmer"></div>
+    <div class="status-page">
+      <div id="feature-1" class="card bg-img grid-item_1"></div>
+      <div class="status-page-description">
+        <h3>Warrior of Light</h3>
+        <p class="card-name">If Warrior of Light deals damage to a Forward of cost 4 or more, double the damage instead.</p>
+        <p>$9.00</p>
+        <button class="undim" type="button" name="undim" onclick="undim()"><i class="fas fa-times fa-lg"></i></button>
+        <button class="add-to-cart" type="button" name="add-to-cart"><i class="fas fa-cart-plus fa-2x"></i></button>
+      </div>
+      <label class="quantity-label" for="quantity">Quantity:</label>
+      <select class="quantity">
+        <option value="one">1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+        <option value="four">4</option>
+      </select>
+    </div>
+    <div class="wrap-products">
+      <header class="main-header">
+          <div id="pageTop" class="container">
+              <img class="icon" src="choco.png" alt="icon">
+              <h1 class="name"><a href="index.html">CHOCOBO INN</a></h1>
+              <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><input class="search" type="search" name="card-search" placeholder="Search by Keyword"></li>
+                <li><a href="products.html"><i class="fas fa-search"></i></a></li>
+              </ul>
+          </div>
+      </header>
+      <div class="container">
+        <div class="grid-container">
+          <div id="feature-1" class="card bg-img grid-item_1" onclick="dim()"></div>
+          <div id="feature-2" class="card bg-img grid-item_2" onclick="dim()"></div>
+          <div id="feature-3" class="card bg-img grid-item_3" onclick="dim()"></div>
+          <div id="feature-4" class="card bg-img grid-item_4" onclick="dim()"></div>
+          <div id="feature-5" class="card bg-img grid-item_5" onclick="dim()"></div>
+          <div id="feature-6" class="card bg-img grid-item_6" onclick="dim()"></div>
+          <div id="feature-7" class="card bg-img grid-item_7" onclick="dim()"></div>
+          <div id="feature-8" class="card bg-img grid-item_8" onclick="dim()"></div>
+          <div id="feature-9" class="card bg-img grid-item_9" onclick="dim()"></div>
+          <div id="feature-10" class="card bg-img grid-item_10" onclick="dim()"></div>
+          <div id="feature-11" class="card bg-img grid-item_11" onclick="dim()"></div>
+          <div id="feature-12" class="card bg-img grid-item_12" onclick="dim()"></div>
+        </div>
+      </div>
+      <div class="filter-wrap">
+        <div class="filters">
+          <form action="#">
+          <h4>Type:</h4>
+            <input type="checkbox" name="Type" value="forward"> Forward <br>
+            <input type="checkbox" name="Type" value="backup"> Backup <br>
+            <input type="checkbox" name="Type" value="summon"> Summon <br>
+            <input type="checkbox" name="Type" value="monster"> Monster <br>
+          <h4>Element:</h4>
+            <input type="checkbox" name="Element" value="fire"> Fire <br>
+            <input type="checkbox" name="Element" value="water"> Water <br>
+            <input type="checkbox" name="Element" value="ice"> Ice <br>
+            <input type="checkbox" name="Element" value="earth"> Earth <br>
+            <input type="checkbox" name="Element" value="lightning"> Lightning <br>
+            <input type="checkbox" name="Element" value="wind"> Wind <br>
+            <input type="checkbox" name="Element" value="light"> Light <br>
+            <input type="checkbox" name="Element" value="dark"> Dark <br>
+          <h4>Rarity:</h4>
+            <input type="checkbox" name="Rarity" value="common"> Common <br>
+            <input type="checkbox" name="Rarity" value="rare"> Rare <br>
+            <input type="checkbox" name="Rarity" value="hero"> Hero <br>
+            <input type="checkbox" name="Rarity" value="legend"> Legend <br>
+            <input type="checkbox" name="Rarity" value="starter"> Starter <br>
+            <input type="checkbox" name="Rarity" value="promo"> Promo <br>
+            <input class="apply"type="submit" value="Apply Filters">
+          </form>
+        </div>
+        <button class="filter-toggle" type="button" name="toggle" onclick="filterBtn()"><i class="fas fa-caret-square-right fa-2x"></i></button>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="page-number">
+        <button class="previous-page" type="button" name="previous-page"><i class="fas fa-arrow-left fa-lg"></i></button>
+        <label class="page-number-label" for="page-number">1</label>
+        <button class="next-page" type="button" name="next-page"><i class="fas fa-arrow-right fa-lg"></i></button>
+      </div>
+      <div class="container">
+        <a class="footer-link" href="https://www.linkedin.com/"><i class="fab fa-linkedin"> Linkedin</i></a>
+        <a class="footer-link" href="https://twitter.com/"><i class="fab fa-twitter-square"> Twitter</i></a>
+        <a class="footer-link" href="https://www.instagram.com"><i class="fab fa-instagram"> Instagram</i></a>
+        <p class="copyright"> &copy; 2019 Benny Grullon.</p>
+        <a href="#pageTop">Back to top</a>
+      </div>
+    </footer>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

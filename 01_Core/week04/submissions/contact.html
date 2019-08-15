@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CHOCOBO INN</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/164c842cae.js"></script>
+  </head>
+  <body>
+    <div class="wrap-contact">
+      <header class="main-header">
+          <div  id="pageTop" class="container">
+              <img class="icon" src="choco.png" alt="icon">
+              <h1 class="name"><a href="index.html">CHOCOBO INN</a></h1>
+              <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><input class="search" type="search" name="card-search" placeholder="Search by Keyword"></li>
+                <li><a href="products.html"><i class="fas fa-search"></i></a></li>
+              </ul>
+          </div>
+      </header>
+      <div class="container">
+        <form>
+          <div class="contact-me-grid">
+            <div class="contact-item_1">
+              <label for="fName">First Name:</label>
+              <input id="fName" type="text" name="fName" value="">
+              <label for="lName">Last Name:</label>
+              <input id="lName" type="text" name="lName" value="">
+            </div>
+            <div class="contact-item_2">
+              <label for="email">Email:</label>
+              <input id="email" type="email" name="" value="">
+              <label for="tel">Phone Number:</label>
+              <input id="tel" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+            </div>
+            <div class="contact-item_3">
+              <label for="preferred">Preferred contact method:</label>
+              <input type="radio" name="preferred" value="Phone">Phone </>
+              <input type="radio" name="preferred" value="Email">EMail </>
+            </div>
+            <div class="contact-item_4">
+              <label for="how-did-you">How did you hear from us ?</label></>
+              <input type="checkbox" name="how-did-you" value="Conference">Conference </>
+              <input type="checkbox" name="how-did-you" value="TV">TV </>
+              <input type="checkbox" name="how-did-you" value="Word of Mouth">Word of Mouth </>
+              <input type="checkbox" name="how-did-you" value="Radio">Radio </>
+              <input type="checkbox" name="how-did-you" value="Other">Other </>
+            </div>
+            <div class="contact-item_5">
+              <label for="comments">Comments:</label></>
+              <textarea name="comments" rows="8" cols="80"></textarea></>
+              <input class="submit-contact-info" type="submit" value="Submit" onclick="contactValid()">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <a class="footer-link" href="https://www.linkedin.com/"><i class="fab fa-linkedin"> Linkedin</i></a>
+        <a class="footer-link" href="https://twitter.com/"><i class="fab fa-twitter-square"> Twitter</i></a>
+        <a class="footer-link" href="https://www.instagram.com"><i class="fab fa-instagram"> Instagram</i></a>
+        <p class="copyright"> &copy; 2019 Benny Grullon.</p>
+        <a href="#pageTop">Back to top</a>
+      </div>
+    </footer>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

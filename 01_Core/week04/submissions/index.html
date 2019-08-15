@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CHOCOBO INN</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/164c842cae.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="main-header">
+          <div  id="pageTop" class="container">
+              <img class="icon" src="choco.png" alt="icon">
+              <h1 class="name"><a href="index.html">CHOCOBO INN</a></h1>
+              <ul class="main-nav">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><input class="search" type="search" name="card-search" placeholder="Search by Keyword"></li>
+                <li><a href="products.html"><i class="fas fa-search"></i></a></li>
+              </ul>
+          </div>
+          </header>
+        <div class="feature">
+          <div class="container">
+            <div id="feature-inner" class="feature-inner">
+              <button type="button" class="l-feature-button" onclick="leftButton()" >|</button>
+              <div id="feature-1" class="card bg-img"></div>
+              <div id="feature-2" class="card-mid bg-img"></div>
+              <div id="feature-3" class="card bg-img"></div>
+              <button type="button" class="r-feature-button" onclick="rightButton()" >|</button>
+            </div>
+            <h2 class="feature-banner">Featured Cards</h2>
+        </div>
+          </div>
+          <hr>
+        <div class="container">
+          <h3 class="recently-added-banner">Recently Added Cards</h3>
+          <div class="recently-added">
+            <a href="products.html"><div id="recently-one" class="recently-added-cards bg-img" ></div></a>
+            <a href="products.html"><div id="recently-two" class="recently-added-cards bg-img" ></div></a>
+            <a href="products.html"><div id="recently-three" class="recently-added-cards bg-img" ></div></a>
+            <a href="products.html"><div id="recently-four" class="recently-added-cards bg-img" ></div></a>
+            <a href="products.html"><div id="recently-five" class="recently-added-cards bg-img" ></div></a>
+          </div>
+        <hr>
+        <h3 class="popular-cards-banner">Popular Cards</h3>
+          <div class="popular">
+            <a href="products.html"><div id="popular-one" class="popular-cards bg-img" ></div></a>
+            <a href="products.html"><div id="popular-two" class="popular-cards bg-img" ></div></a>
+            <a href="products.html"><div id="popular-three" class="popular-cards bg-img" ></div></a>
+            <a href="products.html"><div id="popular-four" class="popular-cards bg-img" ></div></a>
+            <a href="products.html"><div id="popular-five" class="popular-cards bg-img" ></div></a>
+          </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <a class="footer-link" href="https://www.linkedin.com/"><i class="fab fa-linkedin"> Linkedin</i></a>
+        <a class="footer-link" href="https://twitter.com/"><i class="fab fa-twitter-square"> Twitter</i></a>
+        <a class="footer-link" href="https://www.instagram.com"><i class="fab fa-instagram"> Instagram</i></a>
+        <p class="copyright"> &copy; 2019 Benny Grullon.</p>
+        <a href="#pageTop">Back to top</a>
+      </div>
+    </footer>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
