@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {{template "head"}}
+  </head>
+  <body>
+    <div class="wrap media">
+      <div class="fixed media">
+      <header class="main-header">
+          {{template "header"}}
+      </header>
+      <div class="nav media">
+          {{template "nav"}}
+      </div>
+    </div>
+      <div id="hide-pages" class="display-pages">
+      <div class="feature">
+        <div class="container">
+          <div id="feature-inner" class="feature-inner">
+            <button type="button" class="l-feature-button" onclick="leftButton()">|</button>
+            <div id="feature-1" class="card bg-img"></div>
+            <div id="feature-2" class="card-mid bg-img mobile"></div>
+            <div id="feature-3" class="card bg-img mobile"></div>
+            <button type="button" class="r-feature-button" onclick="rightButton()">|</button>
+          </div>
+          <h2 class="feature-banner">Featured Cards</h2>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+        <h3 class="recently-added-banner">Recently Added Cards</h3>
+        <div class="recently-added">
+          <a href="products.html">
+            <div id="recently-one" class="recently-added-cards bg-img"></div>
+          </a>
+          <a href="products.html">
+            <div id="recently-two" class="recently-added-cards bg-img"></div>
+          </a>
+          <a href="products.html">
+            <div id="recently-three" class="recently-added-cards bg-img"></div>
+          </a>
+          <a href="products.html">
+            <div id="recently-four" class="recently-added-cards bg-img mobile"></div>
+          </a>
+          <a href="products.html">
+            <div id="recently-five" class="recently-added-cards bg-img mobile"></div>
+          </a>
+        </div>
+        <hr>
+        <h3 class="recently-added-banner">Popular Cards</h3>
+        <div class="popular">
+          <a href="products.html">
+            <div id="popular-one" class="popular-cards bg-img"></div>
+          </a>
+          <a href="products.html">
+            <div id="popular-two" class="popular-cards bg-img"></div>
+          </a>
+          <a href="products.html">
+            <div id="popular-three" class="popular-cards bg-img"></div>
+          </a>
+          <a href="products.html">
+            <div id="popular-four" class="popular-cards bg-img mobile"></div>
+          </a>
+          <a href="products.html">
+            <div id="popular-five" class="popular-cards bg-img mobile"></div>
+          </a>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+    {{template "script"}}
+  </body>
+</html>

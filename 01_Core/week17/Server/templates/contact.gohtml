@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  {{template "head"}}
+</head>
+<body>
+  <div class="wrap media">
+    <div class="fixed media">
+      <header class="main-header">
+         {{template "header"}}
+      </header>
+      <div class="nav media">
+        {{template "nav"}}
+      </div>
+    </div>
+    <div id="hide-pages" class="display-pages">
+      <div class="container">
+        <form>
+          <div class="contact-me-grid">
+            <div class="contact-item_1">
+              <label for="fName">First Name:</label>
+              <label for="lName">Last Name:</label>
+              <label for="email">Email:</label>
+              <label for="tel">Phone Number:</label>
+            </div>
+            <div class="contact-item_2">
+              <input id="fName" type="text" name="fName" value="" required>
+              <input id="lName" type="text" name="lName" value="" required>
+              <input id="email" type="email" name="email" value="" required>
+              <input id="tel" type="tel" name="tel" value="" required>
+            </div>
+            <div class="contact-item_3">
+              <label>Preferred contact method:</label>
+            </div>
+            <div class="contact-item_4">
+              <input type="radio" name="preferred" >
+              <input type="radio" name="preferred" >
+            </div>
+            <div class="contact-item_5">
+              <label for="Phone">Phone</label>
+              <label for="Email">Email</label>
+            </div>
+            <div class="contact-item_6">
+              <label>How did you hear from us ?</label>
+            </div>
+            <div class="contact-item_7">
+              <input type="checkbox" id="Conference">
+              <input type="checkbox" id="TV" value="TV">
+              <input type="checkbox" id="Word-of-Mouth">
+              <input type="checkbox" id="Radio">
+              <input type="checkbox" id="Other">
+            </div>
+            <div class="contact-item_8">
+              <label for="Conference">Conference</label>
+              <label for="TV">TV</label>
+              <label for="Word-of-Mouth">Word of Mouth</label>
+              <label for="Radio">Radio</label>
+              <label for="Other">Other</label>
+            </div>
+            <div class="contact-item_9">
+              <label for="comments">Comments:</label>
+              <textarea id="comments" rows="8" cols="80"></textarea>
+              <input class="submit-contact-info" type="button" value="Submit" onclick="contactValid()">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  {{template "script"}}
+</body>
+</html>

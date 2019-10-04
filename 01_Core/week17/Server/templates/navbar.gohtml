@@ -1,0 +1,30 @@
+{{define "nav"}}
+<button type="button" class="collapsible" onclick="collapse()">DIRECTORY</button>
+        <div id="colCon" class="content">
+          <div class="nav-side-bar">
+            <iframe src="https://giphy.com/embed/AxkqzkwLxl0is" width="280" height="180" frameBorder="0" allowFullScreen
+                style="pointer-events: none;"></iframe>
+            <ul>
+              <li><button class="nav-side-bar-buttons" type="button"
+                  onclick="window.location.href = 'home';">Home</button></li>
+              <li><button class="nav-side-bar-buttons" type="button"
+                  onclick="window.location.href = 'products';">Products</button></li>
+
+              <li><button class="nav-side-bar-buttons" type="button"
+                  onclick="window.location.href = 'contact';">Contact</button></li>
+              <li><button class="nav-side-bar-buttons" type="button"
+                  onclick="window.location.href = 'admin';">Admin</button></li>
+            </ul>
+          </div>
+        </div>
+        <div id="hide-footer">
+          <footer class="main-footer">
+            <div class="container">
+              <a class="footer-link" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a class="footer-link" href="https://twitter.com/"><i class="fab fa-twitter-square fa-lg"></i></a>
+              <a class="footer-link" href="https://www.instagram.com"><i class="fab fa-instagram fa-lg"></i></a>
+              <p class="copyright">&copy; 2019 Benny Grullon.</p>
+            </div>
+          </footer>
+        </div>
+{{end}}

@@ -1,0 +1,274 @@
+@media (max-width: 900px){
+
+
+    .mobile {
+        display: none;
+    }
+
+    .media {
+        width: 100%;
+        /*height: 100%; */
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .display-pages {
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 158px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-header {
+        height: 100px;
+        text-align: center;
+    }
+
+    .seach-bar{
+        display: inline-block;
+    }
+
+    .search{
+        position: relative;
+        right: 0px;
+        width: 250px;
+    }
+
+    .fa-search {
+        position: relative;
+        right: 0;
+    }
+
+    .name {
+        font-size: 2.2em;
+    }
+
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 20px;
+        display: block;
+    }
+    
+    .active, .collapsible:hover {
+        background-color: #555;
+    }
+    
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        text-align: center;
+    }
+
+    .main-footer{
+        bottom: -710px;
+        position: absolute;
+        width: 100%;
+    }
+
+    #hide-footer {
+        display: none;
+    }
+
+    
+    
+/***********************
+
+    GRID CONTAINER For PRODUCT PAGE
+
+        **********************/
+
+    .grid-container {
+        margin: 15px 0 30px 0;
+        display: grid;
+        grid-template-columns: 220px;
+        grid-template-rows: 350px 350px 350px;
+        grid-gap: 15px 15px;
+        justify-content: center;
+    }
+
+    .grid-item_F,
+    .grid-item_F label,
+    .grid-item_F select,
+    .grid-item_F h2 {
+    margin: 30px 10px 0 10px;
+    text-align: center;
+    }
+
+    select{
+        border: 1px solid white;
+    }
+
+    .grid-item_0 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    }
+
+    .grid-item_1 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    }
+
+    .grid-item_2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    }
+
+    .grid-item_3 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    }
+
+    .card{
+        width: 260px;
+        height: 320px; 
+    }
+
+/***********************
+
+    GRID CONTAINER For CONTACE PAGE
+
+        **********************/
+
+.contact-me-grid {
+    margin: 0;
+    display: inline-grid;
+    grid-template-columns: 180px 60px 100px;
+    grid-template-rows: 180px 100px;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .contact-me-grid label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-me-grid input {
+    display: inline-block;
+    margin: 4px;
+    width: 100px;
+  }
+  
+  .contact-item_1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-top: 20px;
+  }
+  
+  .contact-item_2 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+  
+  .contact-item_3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  
+  .contact-item_4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  
+  .contact-item_5 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  
+  .contact-item_6 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  
+  .contact-item_7 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  
+  .contact-item_8 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+  }
+  
+  .contact-item_9 {
+    grid-column: 1 / span 2;
+    grid-row-start: 4;
+  }
+
+  textarea{
+      width: 350px;
+  }
+
+  .submit-contact-info{
+      border: 1px solid white;
+  }
+
+  /***********************
+
+      GRID CONTAINER For ADMIN PAGE
+
+         **********************/
+.admin-grid {
+    margin: 0;
+    display: inline-grid;
+    grid-template-columns: 180px 100px;
+    grid-template-rows: 180px 100px;
+    padding: 15px;
+  }
+  
+  .admin-grid label {
+    display: block;
+    margin-bottom: 13px;
+  }
+
+  .admin-grid label.hide-inv {
+    display: none;
+  }
+  
+  .admin-grid input {
+    display: inline-block;
+    margin: 3px;
+    width: 100px;
+  }
+
+  .hide-inv {
+    display: none;
+  }
+  
+  .admin-item_1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  
+  .admin-item_2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  
+  .admin-item_3 {
+    grid-column: 1 / span 2;
+    grid-row-start: 3;
+  }
+
+  .submit-card-info{
+      border: 1px solid white;
+  }
+
+  
+
+
+
+}
