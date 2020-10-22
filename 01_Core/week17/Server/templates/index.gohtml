@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  {{template "head"}}
+</head>
+
+<body>
+  <div class="wrap media">
+    <div class="fixed media">
+      <header class="main-header">
+          {{template "header"}}
+      </header>
+      <div class="nav media">
+          {{template "nav"}}
+    </div>
+    </div>
+    <div class="display-pages">
+        {{.}}
+    </div>
+  </div>
+  </div>
+  {{template "script"}}
+</body>
+
+</html>

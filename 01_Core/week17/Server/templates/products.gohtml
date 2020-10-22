@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {{template "head"}}
+  </head>
+  <body>
+    <div class="wrap media">
+      <div class="fixed media">
+      <header class="main-header">
+          {{template "header"}}
+      </header>
+      <div class="nav media">
+          {{template "nav"}}
+        </div>
+    </div>
+      <div id="hide-pages" class="display-pages">
+      <div class="container">
+        <div class="grid-item_F">
+          <h2>Filter Selection</h2>
+          <label for="Element">Element</label>
+          <select id="element">
+            <option value="None">None</option>
+            <option value="Fire">Fire</option>
+            <option value="Water">Water</option>
+            <option value="Ice">Ice</option>
+            <option value="Wind">Wind</option>
+            <option value="Earth">Earth</option>
+            <option value="Lightning">Lightning</option>
+            <option value="Dark">Dark</option>
+            <option value="Light">Light</option>
+          </select>
+          <label for="cardType">Type</label>
+          <select id="cardtype">
+            <option value="None">None</option>
+            <option value="Forward">Forward</option>
+            <option value="Backup">Backup</option>
+            <option value="Summon">Summon</option>
+            <option value="Monster">Monster</option>
+          </select>
+          <button class="filter-button" onclick="filtering()" type="button">Submit</button>
+        </div>
+        <div class="grid-container products">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="dimmer"></div>
+  <div class="status-page">
+    <div id="feature-D" class="card bg-img grid-item_1"></div>
+    <div class="status-page-description">
+      <h3>Warrior of Light</h3>
+      <p class="card-name">If Warrior of Light deals damage to a Forward of cost 4 or more, double the damage instead.
+      </p>
+      <p>$9.00</p>
+      <button class="undim" type="button" name="undim" onclick="undim()"><i class="fas fa-times fa-lg"></i></button>
+      <button class="add-to-cart" type="button" name="add-to-cart"><i class="fas fa-cart-plus fa-2x"></i></button>
+    </div>
+    <label class="quantity-label">Quantity:</label>
+    <select class="quantity">
+      <option value="one">1</option>
+      <option value="two">2</option>
+      <option value="three">3</option>
+      <option value="four">4</option>
+    </select>
+  </div>
+    {{template "script"}}
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  {{template "head"}}
+</head>
+<body>
+  <div class="wrap media">
+    <div class="fixed media">
+      <header class="main-header">
+          {{template "header"}}
+      </header>
+      <div class="nav media">
+          {{template "nav"}}
+      </div>
+    </div>
+    <div id="hide-pages" class="display-pages">
+      <div class="container">
+        <form>
+          <div class="admin-grid">
+            <label class="hide-inv" for="Inventory">Inventory</label>
+            <select class="hide-inv" id="inventory" onclick="adminListen()">
+              <option value="None">None</option>
+              <option value="View">View</option>
+              <option value="Add">Add</option>
+              <option value="Update">Update</option>
+              <option value="Delete">Delete</option>
+            </select>
+            <div class="admin-item_1">
+              <label class="View" id="cardName_L" for="cardName">Card Name:</label>
+              <label class="View" id="cost_L" for="cost">Cost:</label>
+              <label class="View" id="cardType_L" for="cardType">Card Type:</label>
+              <label class="View" id="element_L" for="element">Element:</label>
+              <label class="View" id="rarity_L" for="rarity">Rarity:</label>
+              <label class="View" id="cardSet_L" for="cardSet">Card Set:</label>
+              <label class="View" id="code_L" for="code">Card Code:</label>
+              <label class="View" id="price_L" for="price">Card Price:</label>
+              <label class="View" id="featured_L" for="featured">Featured:</label>
+            </div>
+            <div class="admin-item_2">
+              <input class="View" id="cardName" type="text">
+              <input class="View" id="cost" type="text">
+              <input class="View" id="cardType" type="text">
+              <input class="View" id="element" type="number">
+              <input class="View" id="rarity" type="text">
+              <input class="View" id="cardSet" type="text">
+              <input class="View" id="code" type="text">
+              <input class="View" id="price" type="number">
+              <input class="View" id="featured" type="checkbox" name="featured">
+            </div>
+            <div class="admin-item_3">
+              <input id="View" class="submit-card-info" type="button" value="View" onclick="dbView()">
+              <input id="Add" class="submit-card-info" type="button" value="Add" onclick="dbEntry()">
+              <input id="Update" class="submit-card-info" type="button" value="Update" onclick="dbUpdate()">
+              <input id="Delete" class="submit-card-info" type="button" value="Delete" onclick="dbDelete()">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  {{template "script"}}
+</body>
+</html>

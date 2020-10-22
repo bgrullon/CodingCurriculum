@@ -1,0 +1,496 @@
+/*
+Colors:
+#2a363b black
+#e84a5f red
+#ff847c orange
+#fecea8 yellow
+
+new choices
+#323232
+
+*/
+
+hr {
+  border: dotted #fecea8 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 40px auto 40px auto;
+}
+
+h3,
+h2 {
+  text-align: center;
+}
+
+.main-header {
+  min-width: calc(100vw);
+}
+
+.nav {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 10;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: -6px 6px 15px black;
+}
+
+.l-feature-button {
+  border-radius: 10px 0 0 10px;
+}
+
+.r-feature-button {
+  border-radius: 0 10px 10px 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+body {
+  color: #e84a5f;
+  font-family: "Cinzel", serif;
+}
+
+object {
+  min-height: calc(100vh - 41px);
+  min-width: calc(100vw - 280px);
+}
+
+.display-pages {
+  position: absolute;
+  min-width: calc(100vw - 280px);
+  min-height: calc(100vh - 41px);
+  left: 280px;
+  margin-top: 41px;
+  background-color: #2a363b;
+  box-shadow: -6px 0 15px black;
+}
+
+
+/***********************
+
+  MAIN PAGE HEADER
+
+         **********************/
+
+.collapsible {
+  display: none;
+}
+
+.nav-side-bar-buttons {
+  padding: 15px 0 15px 0;
+  width: 280px;
+  z-index: 5;
+  margin: 10px 0 10px 0;
+}
+
+.nav-side-bar-buttons:hover {
+  background-color: #2a363b;
+  color: white;
+}
+
+
+.feature::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  border-bottom: 1px solid white;
+}
+
+.feature,
+.main-header {
+  background-color: #2a363b;
+}
+
+.feature,
+.main-footer {
+  padding: 1em 0;
+}
+
+.main-header a,
+.main-footer a,
+.nav-side-bar a {
+  text-decoration: none;
+  color: #e84a5f;
+}
+
+.main-header li,
+.nav-side-bar li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.name,
+.main-nav,
+.main-nav li,
+.nav-side-bar {
+  display: inline-block;
+}
+
+.main-nav a {
+  color: #ff847c;
+  font-family: "Cinzel", serif;
+}
+
+.name {
+  font-family: "Lobster", serif;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.fa-search {
+  position: absolute;
+  right: 180px;
+  top: 12px;
+}
+
+.search {
+  border-radius: 10px;
+  position: absolute;
+  width: 300px;
+  right: 200px;
+  top: 8px;
+}
+
+/***********************
+
+      FEATURE & MIDDLE CONTAINER
+
+         **********************/
+.card-mid {
+  width: 220px;
+  height: 300px;
+  background-color: transparent;
+  box-shadow: -15px 15px 20px black;
+  border-radius: 8px;
+}
+
+.card {
+  width: 190px;
+  height: 260px;
+  background-color: transparent;
+  box-shadow: -10px 10px 10px black;
+  border-radius: 8px;
+}
+
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.r-feature-button,
+.l-feature-button {
+  width: 25px;
+  height: 100px;
+}
+
+.feature-inner,
+.recently-added,
+.popular {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recently-added-cards,
+.popular-cards {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  box-shadow: -5px 5px 10px black;
+}
+
+/***********************
+
+      GRID CONTAINER For PRODUCT PAGE
+
+         **********************/
+.grid-container {
+  margin: 15px 0 30px 0;
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 300px 300px 300px;
+  grid-gap: 15px 15px;
+  justify-content: center;
+}
+
+
+.grid-item_F,
+.grid-item_F label,
+.grid-item_F select,
+.grid-item_F h2 {
+  margin: 0 10px 0 10px;
+  text-align: center;
+}
+
+.grid-item_0 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.grid-item_1 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.grid-item_2 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.grid-item_3 {
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+/***********************
+
+      GRID CONTAINER For CONTACE PAGE
+
+         **********************/
+.contact-me-grid {
+  margin: 100px;
+  display: inline-grid;
+  grid-template-columns: 280px 20px 200px;
+  grid-template-rows: 180px 100px;
+  grid-gap: 15px 15px;
+  padding: 15px;
+}
+
+.contact-me-grid label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-me-grid input {
+  display: inline-block;
+  margin: 4px;
+}
+
+.contact-item_1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.contact-item_2 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.contact-item_3 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.contact-item_4 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.contact-item_5 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.contact-item_6 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.contact-item_7 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+.contact-item_8 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.contact-item_9 {
+  grid-column: 1 / span 2;
+  grid-row-start: 4;
+}
+
+/***********************
+
+      GRID CONTAINER For ADMIN PAGE
+
+         **********************/
+.admin-grid {
+  margin: 100px;
+  display: inline-grid;
+  grid-template-columns: 280px 200px;
+  grid-template-rows: 30px 180px 100px;
+  grid-gap: 15px 15px;
+  padding: 15px;
+}
+
+.admin-grid label {
+  margin-bottom: 13px;
+}
+
+.admin-grid input {
+  margin: 3px 0 6px 0;
+}
+
+.admin-item_1 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.admin-item_2 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.admin-item_3 {
+  grid-column: 1 / span 2;
+  grid-row-start: 4;
+}
+
+.View {
+  display: none;
+}
+
+.submit-card-info{
+  display: none;
+}
+
+/***********************
+
+      FILTERS
+
+         **********************/
+
+.filter-button {
+  box-shadow: none;
+  border: solid 1px grey;
+  margin-top: 5px;
+}
+
+/***********************
+
+      STATUS PAGE
+
+         **********************/
+.status-page {
+  position: absolute;
+  z-index: 20;
+  left: 40%;
+  top: 30%;
+  background-color: #e84a5f;
+  width: 400px;
+  height: 270px;
+  text-align: right;
+  padding: 15px;
+  display: none;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.status-page-description {
+  width: 180px;
+  height: 200px;
+  padding: 5px;
+  margin: auto 0 auto 5px;
+  background-color: #2a363b;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+.undim,
+.add-to-cart {
+  box-shadow: none;
+  position: absolute;
+  background: transparent;
+}
+
+.undim {
+  top: 5px;
+  right: 1px;
+}
+
+.add-to-cart {
+  bottom: 5px;
+  right: 5px;
+}
+
+.quantity-label,
+.quantity {
+  position: absolute;
+  height: 30px;
+  width: 35px;
+}
+
+.quantity {
+  right: 15%;
+  bottom: 10px;
+}
+
+.quantity-label {
+  right: 40%;
+  color: #2a363b;
+  bottom: 4px;
+}
+
+/***********************
+
+      DIMMER
+
+         **********************/
+#dimmer {
+  background: #000;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 10;
+}
+/***********************
+
+      FOOTER CONTAINER
+
+         **********************/
+
+.wrap,
+.nav-side-bar {
+  min-height: calc(100vh - 141px);
+}
+
+.main-footer {
+  text-align: center;
+  width: 280px;
+}
+
+.copyright {
+  color: #ff847c;
+}
+
+.footer-link {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
